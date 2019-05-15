@@ -6,15 +6,16 @@ import {
   StoreEnhancer,
   combineReducers,
   AnyAction
-} from '../../../../Library/Caches/typescript/3.4.3/node_modules/redux';
+} from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 
+declare interface Test { type: 'ConfirmAddressSelectionForBilling' }
 const eventsMap = {
   ['CONFIRM_ADDRESS_SELECTION_FOR_DELIVERY']: (
-    action: { type: 'ConfirmAddressSelectionForBilling' },
+    action: Test,
     state: {}
   ) => ({})
 };
@@ -32,7 +33,7 @@ const composeEnhancers = (): StoreEnhancer<{}, {}> => {
 export interface ReducerState {
   test: []
 }
-const initialState: ReducerState | undefined = { test: [] }
+const initialState: ReducerState = { test: [] }
 const reducer = combineReducers({
   app: (state = initialState, action: AnyAction): ReducerState => state,
 })
