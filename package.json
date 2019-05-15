@@ -1,0 +1,21 @@
+{
+  "name": "test_type",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tslint": "tsc --project tsconfig.json"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react-redux": "^7.0.9",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "redux-beacon": "^2.1.0",
+    "redux-devtools-extension": "^2.13.8",
+    "typescript": "^3.4.5"
+  }
+}
