@@ -23,5 +23,7 @@
     "noImplicitReturns": true,
     "jsx": "preserve"
   },
-  
+  "include": [
+    "test.tsx"
+  ]
 }
